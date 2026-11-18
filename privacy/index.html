@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — ncertTotal</title>
+  <style>
+    :root {
+      --bg: #0d1117;
+      --card-bg: #161b22;
+      --border: #30363d;
+      --text: #e6edf3;
+      --text-muted: #8b949e;
+      --accent: #58a6ff;
+      --highlight: #238636;
+    }
+    body.light-theme {
+      --bg: #f6f8fa;
+      --card-bg: #ffffff;
+      --border: #d0d7de;
+      --text: #1f2328;
+      --text-muted: #656d76;
+      --accent: #0969da;
+      --highlight: #1a7f37;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 24px 16px;
+      transition: background-color 0.2s, color 0.2s;
+    }
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 28px;
+    }
+    .brand {
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+    .theme-toggle {
+      background: var(--card-bg);
+      color: var(--text);
+      border: 1px solid var(--border);
+      padding: 6px 14px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 24px;
+    }
+    h1 {
+      font-size: 26px;
+      font-weight: 800;
+      margin-bottom: 8px;
+      letter-spacing: -0.5px;
+    }
+    .subtitle {
+      color: var(--text-muted);
+      font-size: 14px;
+      margin-bottom: 24px;
+    }
+    h2 {
+      font-size: 18px;
+      font-weight: 700;
+      margin: 20px 0 8px;
+      color: var(--accent);
+    }
+    p, li {
+      font-size: 15px;
+      margin-bottom: 12px;
+      color: var(--text);
+    }
+    ul {
+      padding-left: 20px;
+      margin-bottom: 16px;
+    }
+    li {
+      margin-bottom: 6px;
+    }
+    .important-notice {
+      background: rgba(35, 134, 54, 0.15);
+      border-left: 4px solid var(--highlight);
+      padding: 14px 16px;
+      border-radius: 6px;
+      margin: 18px 0;
+      font-weight: 500;
+    }
+    footer {
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 13px;
+      padding: 24px 0;
+      border-top: 1px solid var(--border);
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">ncertTotal</div>
+      <button class="theme-toggle" onclick="toggleTheme()" id="themeBtn">Switch to Light Theme</button>
+    </header>
+
+    <div class="card">
+      <h1>Privacy Policy</h1>
+      <div class="subtitle">Effective Date: November 2026</div>
+
+      <div class="important-notice">
+        <strong>Zero Account Requirement:</strong><br>
+        ncertTotal does not require user accounts, phone numbers, email addresses, or student logins. Your personal notes, bookmarks, and scores stay on your device.
+      </div>
+
+      <h2>1. What We Do NOT Collect</h2>
+      <ul>
+        <li>No student names, email addresses, or phone numbers.</li>
+        <li>No private student notes or custom written answers.</li>
+        <li>No camera access, contacts, or location tracking.</li>
+      </ul>
+
+      <h2>2. Anonymous Product Analytics (PostHog)</h2>
+      <p>To fix crashes and see which textbook chapters or papers have broken links, the app sends anonymous technical events (screen views, button taps, error logs) with a random anonymous device ID.</p>
+      <p>You can turn off all analytics at any time directly in the app under <strong>Settings &gt; Privacy &amp; Analytics</strong>.</p>
+
+      <h2>3. Local Storage</h2>
+      <p>Downloaded textbooks and chapter bookmarks are saved in private app storage on your device. You can clear downloads at any time from <strong>Settings &gt; Storage &amp; Cache</strong>.</p>
+
+      <h2>4. Privacy vs. Terms</h2>
+      <p>This document explains our data and privacy practices. For usage terms, licensing, and disclaimers, please see our separate <a href="terms.html">Terms of Service</a>.</p>
+    </div>
+
+    <footer>
+      &copy; 2026 ncertTotal • Built for students and teachers.
+    </footer>
+  </div>
+
+  <script>
+    function toggleTheme() {
+      const isLight = document.body.classList.toggle('light-theme');
+      document.getElementById('themeBtn').innerText = isLight ? 'Switch to Dark Theme' : 'Switch to Light Theme';
+      localStorage.setItem('theme', isLight ? 'light' : 'dark');
+    }
+    if (localStorage.getItem('theme') === 'light' || (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: light)').matches)) {
+      document.body.classList.add('light-theme');
+      document.getElementById('themeBtn').innerText = 'Switch to Dark Theme';
+    }
+  </script>
+</body>
+</html>
