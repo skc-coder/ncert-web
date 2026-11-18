@@ -61,12 +61,6 @@
       align-items: center;
     }
 
-    .brand-group {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-
     .brand {
       font-size: 1.25rem;
       font-weight: 700;
@@ -137,7 +131,7 @@
       margin-bottom: 6px;
     }
 
-    .disclaimer-box {
+    .notice-box {
       background: var(--card-bg);
       border-left: 3px solid var(--accent);
       border-top: 1px solid var(--card-border);
@@ -179,9 +173,7 @@
 </head>
 <body>
   <header>
-    <div class="brand-group">
-      <a href="/" class="brand">ncertTotal</a>
-    </div>
+    <a href="./" class="brand">ncertTotal</a>
     <button class="theme-toggle" id="themeBtn" onclick="toggleTheme()">Theme</button>
   </header>
 
@@ -189,41 +181,46 @@
     <h1>Terms of Service</h1>
     <div class="meta">Last updated: November 2026</div>
 
-    <div class="disclaimer-box">
-      <strong>Important Notice:</strong> ncertTotal is an independent, non-commercial educational navigation tool. We do not host, re-upload, store, or sell NCERT textbooks.
+    <div class="notice-box">
+      <strong>Core Summary:</strong> ncertTotal is an independent educational tool. Official NCERT textbooks are linked to official portals and not hosted by us. Proprietary content (curated notes, explanatory solutions, original study guides) created by the developer is protected by copyright.
     </div>
 
     <section>
       <h2>1. Purpose of Service</h2>
-      <p>ncertTotal organizes links to officially available educational resources (Class 1 to 12) provided by the National Council of Educational Research and Training (NCERT). The app acts strictly as an indexer and reader interface to assist students and educators in accessing publicly published study materials.</p>
+      <p>ncertTotal organizes links to officially available NCERT textbooks, syllabus sheets, and sample papers (Class 1 to 12). The app serves as a focused indexer and reader interface to help students and educators access educational materials efficiently.</p>
     </section>
 
     <section>
-      <h2>2. Intellectual Property Rights</h2>
-      <p>All textbooks, syllabus documents, question papers, exemplars, and laboratory manuals are the copyrighted intellectual property of NCERT and respective boards. ncertTotal claims zero ownership over these materials.</p>
+      <h2>2. Official NCERT Materials (Non-Hosting Notice)</h2>
+      <p>All original NCERT textbooks, national curriculum frameworks, exemplars, and lab manuals are the intellectual property of the National Council of Educational Research and Training (NCERT). ncertTotal does not host, re-upload, store on private servers, or sell NCERT publications. In-app downloads connect directly to official government servers (such as ncert.nic.in).</p>
     </section>
 
     <section>
-      <h2>3. Third-Party Links & Availability</h2>
-      <p>When requesting textbook chapters, downloads connect directly to official government servers (such as ncert.nic.in). ncertTotal does not control server uptime, speed, or alterations made to official files by NCERT.</p>
+      <h2>3. Original Creator Content & Intellectual Property</h2>
+      <p>Certain educational materials available within the application—including original concept notes, chapter summaries, explanatory question walkthroughs, practice question variations, and application layout designs—are authored and created directly by the developer.</p>
+      <ul>
+        <li><strong>All Rights Reserved:</strong> All proprietary notes, explanations, and curated study aids created by the author are the exclusive intellectual property of the author.</li>
+        <li><strong>Permitted Use:</strong> You are granted a personal, revocable, non-exclusive license to view, read, and use this proprietary content strictly for <strong>personal, non-commercial study, learning, and teaching purposes</strong>.</li>
+        <li><strong>Prohibited Actions:</strong> You may not commercially resell, redistribute for profit, republish in bulk, or bundle the author's original study materials into commercial apps, websites, or test series without prior written authorization.</li>
+      </ul>
     </section>
 
     <section>
-      <h2>4. Non-Commercial & Educational Use</h2>
-      <p>This service is offered free of charge strictly for personal educational reference. You agree not to misuse the application or disrupt the network resources it indexes.</p>
+      <h2>4. Non-Commercial & Educational Usage</h2>
+      <p>This service is offered free of charge. You agree not to misuse the application, tamper with resource streams, or conduct automated mass scraping against third-party or developer endpoints.</p>
     </section>
 
     <section>
       <h2>5. Limitation of Liability</h2>
-      <p>The application is provided "as is" without warranty of any kind. ncertTotal is not responsible for examination results, syllabus discrepancies, or third-party server downtime.</p>
+      <p>The application is provided "as is" without warranty of any kind. ncertTotal is not responsible for examination outcomes, curriculum changes by examination boards, or temporary outages of third-party government servers.</p>
     </section>
   </main>
 
   <footer>
     <div>&copy; 2026 ncertTotal</div>
     <div class="footer-links">
-      <a href="/">Home</a>
-      <a href="/privacy.html">Privacy Policy</a>
+      <a href="./">Home</a>
+      <a href="./privacy.html">Privacy Policy</a>
     </div>
   </footer>
 

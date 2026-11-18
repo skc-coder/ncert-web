@@ -61,12 +61,6 @@
       align-items: center;
     }
 
-    .brand-group {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-
     .brand {
       font-size: 1.25rem;
       font-weight: 700;
@@ -176,9 +170,7 @@
 </head>
 <body>
   <header>
-    <div class="brand-group">
-      <a href="/" class="brand">ncertTotal</a>
-    </div>
+    <a href="./" class="brand">ncertTotal</a>
     <button class="theme-toggle" id="themeBtn" onclick="toggleTheme()">Theme</button>
   </header>
 
@@ -187,51 +179,51 @@
     <div class="meta">Last updated: November 2026</div>
 
     <div class="notice-box">
-      <strong>Overview:</strong> ncertTotal does not require user accounts, emails, phone numbers, or passwords. We do not sell data or share individual information with third parties.
+      <strong>Zero Account Policy:</strong> ncertTotal does not require accounts, sign-ups, phone numbers, or passwords. We do not track individual personal identities, sell data, or monetize user profiles.
     </div>
 
     <section>
       <h2>1. Information We Do Not Collect</h2>
-      <p>The app does not collect personal identity information:</p>
+      <p>The app never accesses or collects:</p>
       <ul>
-        <li>No names, email addresses, phone numbers, or social media logins</li>
-        <li>No contacts, SMS, precise location data, or device identifiers</li>
-        <li>No financial, billing, or payment data</li>
+        <li>Names, email addresses, contact lists, or social media accounts</li>
+        <li>Precise GPS location or personal messages</li>
+        <li>Financial, credit card, or payment details</li>
       </ul>
     </section>
 
     <section>
       <h2>2. Feature Usage & Anonymous Analytics</h2>
-      <p>We use lightweight, privacy-conscious telemetry (powered by PostHog) to understand how the app is used and maintain reliability:</p>
+      <p>To keep the app fast and actively fix broken features, we gather privacy-respecting, anonymized telemetry (via PostHog):</p>
       <ul>
-        <li><strong>Feature Usage:</strong> Aggregated actions such as which classes, subjects, or study tabs are opened, enabling us to know which sections need improvement.</li>
-        <li><strong>Link & Resource Health:</strong> Anonymous signals when textbook links fail to load or timeout, so dead links can be repaired quickly.</li>
-        <li><strong>Diagnostics:</strong> App version, operating system version, and anonymous crash stack traces to fix bugs.</li>
+        <li><strong>Feature Usage:</strong> Tracking which features and study sections are actively used (e.g., textbook reader, exemplar solver, board papers, search filters) to understand user needs and guide development.</li>
+        <li><strong>Link & Resource Health:</strong> Detecting failed chapter downloads or network connection timeouts so we can immediately update broken links.</li>
+        <li><strong>Crash & Performance Diagnostics:</strong> Anonymous stack traces and device platform versions (Android version, tablet vs phone form factor) to resolve crashes.</li>
       </ul>
-      <p>All telemetry events are assigned a randomized anonymous identifier and cannot be linked back to individual identities.</p>
+      <p>All telemetry events are assigned a randomly generated UUID that is never linked to personal identities.</p>
     </section>
 
     <section>
       <h2>3. Device Storage & Local Files</h2>
-      <p>When you download a textbook chapter, exemplar, or sample paper, the PDF file is stored locally on your device storage for offline reading. ncertTotal does not read, access, or inspect any other documents or files on your device.</p>
+      <p>When you download study materials for offline reading, files are saved locally on your device. The app only accesses its own dedicated storage sandbox and never reads personal photos, documents, or external folders.</p>
     </section>
 
     <section>
-      <h2>4. External Links to NCERT Portals</h2>
-      <p>When you download or view a textbook, the app connects directly to official servers (including ncert.nic.in). Connections to these third-party servers are governed by their respective privacy terms and network security standards.</p>
+      <h2>4. Direct Connections to Official NCERT Servers</h2>
+      <p>When loading official textbooks, requests stream directly from government portals (including ncert.nic.in). These network transfers are subject to official server security protocols.</p>
     </section>
 
     <section>
-      <h2>5. Policy Updates</h2>
-      <p>Any adjustments to this policy will be reflected here with an updated date. Continued use of the application indicates acceptance of these practices.</p>
+      <h2>5. Updates to this Policy</h2>
+      <p>Any revisions to our privacy practices will be documented here with an updated timestamp.</p>
     </section>
   </main>
 
   <footer>
     <div>&copy; 2026 ncertTotal</div>
     <div class="footer-links">
-      <a href="/">Home</a>
-      <a href="/terms.html">Terms of Service</a>
+      <a href="./">Home</a>
+      <a href="./terms.html">Terms of Service</a>
     </div>
   </footer>
 
